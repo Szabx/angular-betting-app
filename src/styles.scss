@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #F0F0F0
+}
+
+// Atoms
+
+.bg-dark {
+    background-color: #777;
+}
+
+.bg-light {
+    background-color: #CCC;
+}
+
+.c-text-light {
+    color: #CCC;
+}
+
+.c-text-dark {
+    color: #777;
+}
+
+.mv-small {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.pv-small {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

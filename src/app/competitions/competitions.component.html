@@ -1,0 +1,5 @@
+<div class="competitions">
+    <div *ngFor="let competition of competitions" class="bg-dark c-text-light competition" [routerLink]="[competition.name.split(' ').join('-').toLowerCase()]" [queryParams]="{ id:competition.id }">
+        <div>{{ competition.name }}</div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.event-details {
+    .event-venue {
+        text-align: center;
+        border: 1px solid #777;
+        border-radius: 4px;
+        padding: 4px;
+    }
+
+    .team-columns {
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: center;
+
+        .team-container {
+            .team-title {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

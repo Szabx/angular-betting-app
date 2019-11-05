@@ -1,0 +1,8 @@
+<div class="events">
+    <div *ngFor="let event of events" [routerLink]="[event.homeTeam.name.split(' ').join('').substr(0, 3) + '-' + event.awayTeam.name.split(' ').join('').substr(0, 3)]" [queryParams]="{ id:event.id }" class="bg-dark c-text-light event">
+        <span class="championship-title">{{ event.competition.name.toUpperCase() }}</span>
+        <div class="match-home-team mv-small">{{ event.homeTeam.name }}</div>
+        <div class="match-away-team mv-small">{{ event.awayTeam.name }}</div>
+        <div class="match-date">{{ event.utcDate }}</div>
+    </div>
+</div>

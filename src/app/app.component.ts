@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CompetitionsComponent } from './competitions/competitions.component';
 
 @Component({
   selector: 'app-root',
