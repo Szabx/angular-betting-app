@@ -26,7 +26,7 @@ export class EventComponent implements OnInit {
             )
 
         ).subscribe(
-        (response: Array<Object>) => { this.event = response; },
+        (response: EventSchema) => { this.event = response; },
         msg => console.log('Error getting event: ', msg) 
         );
     }
