@@ -9,7 +9,7 @@ import { HttpService } from '../../../http.service';
     styleUrls: ['./event.component.scss']
 })
 export class EventComponent implements OnInit {
-    event: Object
+    event: EventSchema
 
     constructor(
         private httpService: HttpService,
@@ -35,4 +35,19 @@ export class EventComponent implements OnInit {
 
 export interface QueryParams {
     id: Number
+}
+
+export interface EventSchema {
+    head2head: Object,
+    match: {
+        venue: string,
+        homeTeam: {
+            id: Number,
+            name: string
+        },
+        awayTeam: {
+            id: Number,
+            name: string
+        }
+    }
 }
